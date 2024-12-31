@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Clothing Brand</title>
+ <link rel="stylesheet" href="About.css">
+ <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <nav>
+     <a href="#" class="logo">Clothes</a>
+     <div title="Open-menu"  class="nav-toggler" onclick="openmenu()" >
+      <span ></span>
+      </div>
+     <ul>
+      <div title="Open-menu"  class="nav-closer" onclick="closemenu()" >
+        <span ></span>
+        </div>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="shop.html">Shop</a></li>
+       <li><a href="#" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+     </ul>
+   </nav>
+ </header>
+<!-- Hero Section -->
+<div class="hero">
+  <div>
+    <h1>About Us</h1>
+    <p>"Discover the art of fashion where style meets sustainability. Our passion is to craft pieces that inspire confidence, celebrate diversity, and embrace the future of ethical fashion."</p>
+  </div>
+</div>
+
+<!-- Story Section -->
+<section class="story" id="story">
+  <h2>Our Story</h2>
+  <p>Our journey began with a simple idea: to redefine fashion by blending creativity, culture, and quality. Inspired by the vibrant world around us, we set out to create clothing that tells a story—your story. Every stitch, every fabric, and every design reflects our passion for style and our commitment to excellence. From humble beginnings to becoming a trusted name in the fashion industry, we’ve stayed true to our mission: making you feel confident and unique with every piece you wear.</p>
+</section>
+
+<!-- Values Section -->
+<section class="values">
+  <div class="value-box">
+    <h3>Sustainability</h3>
+    <p>We care about the planet. Our clothing is crafted with eco-friendly materials to ensure a greener tomorrow.</p>
+  </div>
+  <div class="value-box">
+    <h3>Inclusivity</h3>
+    <p>Fashion is for everyone. We celebrate diversity with styles that fit every size, shape, and culture.</p>
+  </div>
+  <div class="value-box">
+    <h3>Quality</h3>
+    <p>Our commitment to quality ensures that every piece is comfortable, durable, and trendy.</p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<div class="cta">
+  <h2>Ready to Elevate Your Style?</h2>
+  <a href="shop.html">Shop Our Collection</a>
+</div>
+  
+<script>
+  function openmenu(){
+    const menu = document.querySelector('ul')
+    menu.style.right = '5px';
+  }
+  function closemenu(){
+    const menu = document.querySelector('ul')
+    menu.style.right = '-270px';
+  }
+</script>
+</body>
+</html>

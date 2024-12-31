@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: "Poppins", sans-serif, cursive;
+ text-decoration: none;
+}
+body{
+background-color: rgb(236, 221, 236);
+    
+  }
+header{
+  background-color: rgb(233, 209, 233);
+  width: 100%;
+  padding: 10px 15px;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.logo{
+  color: black;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-family: cursive;
+  font-size: 30px;
+}
+ul{
+  display: flex;
+}
+ul li{
+  list-style-type: none;
+  margin-left: 40px;
+}
+ul li a{
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+ul li a:hover{
+  opacity: 0.7;
+}
+.active{
+  color: red;
+}
+.nav-closer{
+  height: 30px;
+  width: 35px;
+  border: white;
+  cursor: pointer;
+display: none;
+  border-radius: 5px;
+  background:white;
+  align-items: center;
+  justify-content: center;
+}
+.nav-closer span{
+  height: 2px;
+  width: 18px;
+  background: firebrick;
+  display: inline-block;
+  position: relative;
+}
+.nav-closer span::after{
+  content: '';
+  height: 2px;
+  width: 18px;
+  background: firebrick;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.nav-closer span::before{
+  content: '';
+  height: 2px;
+  width: 18px;
+  background: firebrick;
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+ .nav-toggler{
+  height: 30px;
+  width: 35px;
+  border: white;
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  top: 20px;
+  border-radius: 5px;
+  background:white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.nav-toggler span{
+  height: 2px;
+  width: 18px;
+  background: firebrick;
+  display: inline-block;
+  position: relative;
+}
+ .nav-toggler span::before{
+  content: '';
+  height: 2px;
+  width: 18px;
+  background: firebrick;
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+ .nav-toggler span::after{
+  content: '';
+  height: 2px;
+  width: 18px;
+  background: firebrick;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+main{
+  display: flex;
+ gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+ margin-top: 100px;
+ animation: load 2s ease;
+ 
+}
+.text{
+  flex: 0 0 50%;
+  max-width: 50%;
+  
+}
+.text .trade{
+  font-size: 16px;
+  color: grey;
+  font-weight: bold;
+}
+.text h1{
+  margin-top: 30px;
+  font-size: 30px;
+}
+.text h2{
+  font-size: 25px;
+  color: plum;
+  font-weight: 1000;
+  margin-top: 5px;
+}
+.text .save{
+  color: grey;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.text .btn{
+  padding: 10px 25px;
+  margin-top: 20px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  border-radius: 30px;
+  cursor: pointer;
+  transition:  all 0.5s ease;
+}
+.text .btn:hover{
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 510px){
+ 
+  main{
+    margin-top: 20px;
+  }
+  .text{
+    flex:  0 0 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  
+  nav ul{
+    display: block;
+    position: fixed;
+    right: -270px;
+    top: 20px;
+    background-color: firebrick;
+    padding: 20px;
+    border-radius: 10px;
+    height: 50vh;
+    transition: all 0.5s ease;
+  }
+  nav ul li {
+    margin-top: 30px;
+ }
+ nav ul li a{
+  color: white;
+ }
+.active{
+  color: black;
+  font-weight: 1000;
+ }
+  nav{
+    justify-content: space-between;
+  }
+  .nav-toggler{
+    display: flex;
+  }
+  .nav-closer{
+    display: flex;
+  }
+  header{
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    
+     <nav>
+      <a href="#" class="logo">Clothes</a>
+      <div title="Open-menu"  class="nav-toggler" onclick="openmenu()" >
+        <span ></span>
+        </div>
+      <ul>
+        <div title="Open-menu"  class="nav-closer" onclick="closemenu()" >
+          <span ></span>
+          </div>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="About.html">About</a></li>
+       <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  
+    <div class="text">
+      <p class="trade">Trade-in-offer</p>
+      <h1>Super Value Deals</h1>
+      <h2>On All Products</h2>
+      <p class="save">Save more with coupon and up to 70% off.</p>
+      <a href="shop.html"><button class="btn">Shop now</button></a>
+    </div>
+    <div class="image">
+      <img src="SAD/Mock up.png" >
+    </div>
+  
+  </main>
+  <script>
+    function openmenu(){
+      const menu = document.querySelector('ul')
+      menu.style.right = '5px';
+    }
+    function closemenu(){
+      const menu = document.querySelector('ul')
+      menu.style.right = '-270px';
+    }
+  </script>
+</body>
+</html>

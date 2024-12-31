@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+  <header>
+     <nav>
+      <a href="#" class="logo">Clothes</a>
+      <div title="Open-menu"  class="nav-toggler" onclick="openmenu()" >
+        <span ></span>
+        </div>
+      <ul>
+        <div title="Open-menu"  class="nav-closer" onclick="closemenu()" >
+          <span ></span>
+          </div>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="About.html">About</a></li>
+       <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="banner">
+    <p>Hot Deals</p>
+    <h1>Enjoy <span>up to 70% </span>of all T-shirts and Acessories</h1>
+    <button class="btn">Explore more</button>
+  </div>
+ <section>
+   <div class="titles"> <h1>New Arrivals</h1>
+    <p>New collection of designs</p></div>
+    <div class="products-container">
+      <div class="products">
+        <div class="products-image">
+          <img src="SAD/today1-removebg-preview.png" >
+        </div>
+        <div class="product-type">
+          <h1>branded men's hoodies.</h1>
+                        <p>Promo price: $20.90 <br> <span class="old-price">$30.40</span> </p>
+          <button  onclick="addCart()" class="Cart-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="products">
+          <div class="products-image">
+            <img src="SAD/today2remove.png" >
+          </div>
+          <div class="product-type">
+            <h1>Men Letter Graphic Striped Trim Kangaroo Pocket</h1>
+            <p>Promo price: $15.40 <br> <span class="old-price">$25.50</span> </p>
+            <button  onclick="addCart()" class="Cart-btn">Add to Cart</button>
+            </div>
+          </div>
+          <div class="products">
+            <div class="products-image">
+              <img src="SAD/today4.png" >
+            </div>
+            <div class="product-type">
+              <h1>1 Peça Jaqueta com Capuz com Cordão, Impressão de Arte Pop</h1>
+              <p>Promo price: $25.40 <br> <span class="old-price">$30.50</span> </p>
+              <button  onclick="addCart()" class="Cart-btn">Add to Cart</button>
+              </div>
+            </div>
+            <div class="products">
+              <div class="products-image">
+                <img src="SAD/today5-removebg-preview.png" >
+              </div>
+              <div class="product-type">
+                <h1>ZSHOW Men's Puffer Vest Removable Hooded Vest Outdoor Winter Vest</h1>
+                <p>Promo price: $30.00 <br> <span class="old-price">$40.20</span> </p>
+                <button  onclick="addCart()" class="Cart-btn">Add to Cart</button>
+                </div>
+              </div>
+              <div class="products">
+                <div class="products-image">
+                  <img src="SAD/today6-removebg-preview.png" >
+                </div>
+                <div class="product-type">
+                  <h1>Man United Away jersey 2024/25 </h1>
+                  <p>Promo price: $10.00 <br> <span class="old-price">$15.20</span> </p>
+                  <button  onclick="addCart()" class="Cart-btn">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="products">
+                  <div class="products-image">
+                    <img src="SAD/today7-removebg-preview.png" >
+                  </div>
+                  <div class="product-type">
+                    <h1>Men's Searipe Prime Cargo Baggy Snowboard Pants</h1>
+                    <p>Promo price: $15.45 <br> <span class="old-price">$20.20</span> </p>
+                    <button  onclick="addCart()" class="Cart-btn">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="products">
+                    <div class="products-image">
+                      <img src="SAD/today9-removebg-preview.png" >
+                    </div>
+                    <div class="product-type">
+                      <h1>Men's Japanese Dragon Print Knitted Long Sleeve Hoodie</h1>
+                      <p>Promo price: $40.30 <br> <span class="old-price">$50.70</span> </p>
+                      <button  onclick="addCart()" class="Cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                    <div class="products">
+                      <div class="products-image">
+                        <img src="SAD/today11-removebg-preview.png" >
+                      </div>
+                      <div class="product-type">
+                        <h1>Aelfric Eden Irregular Color Block Jacket.</h1>
+                        <p>Promo price: $40.90 <br> <span class="old-price">$60.40</span> </p>
+                        <button  onclick="addCart()" class="Cart-btn">Add to Cart</button>
+                        </div>
+                      </div>
+    </div>
+  </section>
+
+  <!-- JS -->
+    <script>
+      function openmenu(){
+        const menu = document.querySelector('ul')
+        menu.style.right = '5px';
+      }
+      function closemenu(){
+        const menu = document.querySelector('ul')
+        menu.style.right = '-270px';
+      }
+    </script>
+    
+</body>
+</html>
